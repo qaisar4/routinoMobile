@@ -11,13 +11,8 @@ import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.react.soloader.OpenSourceMergedSoMapping
 import com.facebook.soloader.SoLoader
-import android.os.Bundle
 
 class MainApplication : Application(), ReactApplication {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(null)
-  }
 
   override val reactNativeHost: ReactNativeHost =
       object : DefaultReactNativeHost(this) {
